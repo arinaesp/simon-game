@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIMON</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="flash-overlay"></div>
+
+  <div class="wrapper">
+    <header>
+      <div class="logo">SIMON<span class="acid">.</span></div>
+      <div class="scores">
+        <div class="score-item">
+          <span class="score-label">LVL</span>
+          <span class="score-value" id="level-num">—</span>
+        </div>
+        <div class="score-divider">✕</div>
+        <div class="score-item">
+          <span class="score-label">BEST</span>
+          <span class="score-value" id="high-score">0</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="status-bar">
+      <p id="level-title">PRESS ANY KEY TO START</p>
+    </div>
+
+    <div class="game-wrap">
+      <div class="container">
+        <div id="green"  class="btn green"></div>
+        <div id="red"    class="btn red"></div>
+        <div id="yellow" class="btn yellow"></div>
+        <div id="blue"   class="btn blue"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>TAP BUTTONS OR PRESS ANY KEY</p>
+      <p class="credit">Made by Irishka eje❤️ in San Francisco.</p>
+    </footer>
+  </div>
+
+  <script src="jquery-4.0.0.min.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
